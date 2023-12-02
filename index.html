@@ -53,6 +53,30 @@
       a:active {
         color: #224014;
       }
+
+      @media (max-width: 600px) {
+        #mobileimage img {
+          width: 100%;
+          height: auto;
+        }
+
+        #desktopimage img {
+          display: none;
+        }
+      }
+
+      @media (min-width: 601px) {
+
+        /* screens larger than 600px wide */
+        #desktopimage img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        #mobileimage img {
+          display: none;
+        }
+      }
     </style>
     <h1>
       KW Travel</h1>
@@ -62,7 +86,12 @@
     <a href="#section3">About</a>
     <a href="#section4">Connect</a>
     <p></p>
-    <img src="desktop title image.jpg" alt="description of image" style="width: 100%;height:auto;">
+    <div id="mobileimage">
+      <img src="mobile title image.jpg" alt="description of image">
+    </div>
+    <div id="desktopimage">
+      <img src="desktop title image.jpg" alt="description of image">
+    </div>
     <p></p>
     <div id="section0">
     </div>
