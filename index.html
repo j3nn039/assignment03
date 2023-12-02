@@ -38,7 +38,7 @@
 
       #section3 {
         background-color: white;
-        height: 500px;
+        height: 450px;
       }
 
       #section4 {
@@ -55,6 +55,8 @@
       }
 
       @media (max-width: 600px) {
+
+        /* screens less than 600px wide */
         #mobileimage img {
           width: 100%;
           height: auto;
@@ -63,6 +65,11 @@
         #desktopimage img {
           display: none;
         }
+
+        h1 {
+          text-align: center;
+        }
+        
       }
 
       @media (min-width: 601px) {
@@ -76,6 +83,11 @@
         #mobileimage img {
           display: none;
         }
+        
+        #gettoknowme {
+          float: left;
+          width: 50%;
+        } 
       }
     </style>
     <h1>
@@ -106,7 +118,9 @@
     <div id="section3">
       <h2>Get to Know Me!</h2>
       <img src="Gettoknowme.jpg" alt="description of image" style="max-width:200px;height:auto;">
+    <div id="gettoknowme">
       <p>Hi, my name is Jennifer! I am originally from Toronto, but moved to Waterloo for school. During my free time, I like to try out new restaurants, walk around, and go to different events happening in the Kitchener-Waterloo area with my friends. </p>
+      </div>
     </div>
     <div id="section4">
       <h2> Let's Connect</h2>
